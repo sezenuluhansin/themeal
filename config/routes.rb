@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'pages#contact'
 
+  get 'restaurants/:id', to: 'restaurants#show'
+
   get 'restaurants', to: 'restaurants#index'
+
+  post 'restaurants', to: 'restaurants#create'
 
 
   root to: 'pages#home'
